@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .slider .slick-next {
+    position: absolute;
+    right: -9px !important;
+  }
+  .story_img {
+    height: 250px;
+    width: auto;
+    object-fit: contain;
+  }
+  .story_slider .slick-next {
+    position: absolute;
+    right: 0px;
+  }
+  .story_slider .slick-prev{
+    position: absolute;
+    left: 0px;
+  }
+  .story_slider button {
+    background-color: #3a3b3c;
+    border-radius: 50%;
+    padding: 20px;
+    position: absolute;
+    z-index: 20;
+    font-size: 2rem !important;
+  }
+  .story_slider button:hover {
+    background-color: #3a3b3c !important;
+  }
+  .story_slider button::before {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+}
